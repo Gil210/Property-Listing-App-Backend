@@ -40,7 +40,10 @@ const protectedResponses = { 401: { description: 'Authentication required' }, 40
 module.exports = {
   openapi: '3.0.3',
   info: { title: 'Property Listing API', version: '1.0.0', description: 'Interactive documentation for the version 1 property listing REST API.' },
-  servers: [{ url: 'http://localhost:5000', description: 'Local development server' }],
+  servers: [
+  { url: "https://property-listing-app-backend-2m81.onrender.com" },
+  { url: "http://localhost:5000" }
+],
   tags: [
     { name: 'Auth', description: 'Registration and JWT authentication' },
     { name: 'Users', description: 'Profiles and admin user management' },
